@@ -10,12 +10,12 @@ const ProfileLink = (props) => (
   </div>
 );
 
-const Index = () => (
+const Index = (props) => (
   <Layout>
-    <h1>Friends List {props.profiles[0]}</h1>
-    {props.profiles.map((profile, index) => (
+    <h1>Friends List </h1>
+    {/* {props.profiles.map((profile, index) => (
       <ProfileLink key={index} profile={profile} />
-    ))}
+    ))} */}
 
     <ProfileLink profile="hyojin" />
     <ProfileLink profile="sangjo" />
@@ -23,13 +23,36 @@ const Index = () => (
   </Layout>
 );
 
-Index.getInitialProps = async function () {
-  const res = await fetch("https://uinames.com/api/?amount=10");
-  const data = await res.json();
+// Index.getInitialProps = async function () {
+//   var xhr = new XMLHttpRequest();
+//   var url =
+//     "http://openapi.jbfood.go.kr:8080/openapi/service/JeonbukFoodService/getJeonbukFood"; /*URL*/
+//   var queryParams =
+//     "?" + encodeURIComponent("ServiceKey") + "=" + "서비스키"; /*Service Key*/
+//   queryParams +=
+//     "&" + encodeURIComponent("Area") + "=" + encodeURIComponent("01"); /**/
+//   xhr.open("GET", url + queryParams);
+//   xhr.onreadystatechange = function () {
+//     if (this.readyState == 4) {
+//       alert(
+//         "Status: " +
+//           this.status +
+//           "nHeaders: " +
+//           JSON.stringify(this.getAllResponseHeaders()) +
+//           "nBody: " +
+//           this.responseText
+//       );
+//     }
+//   };
 
-  return {
-    profiles: data.map((profile) => profile.name),
-  };
-};
+//   xhr.send("");
+
+//   const res = await fetch(url);
+//   const data = await res.json();
+
+//   return {
+//     profiles: data.map((profile) => profile.name),
+//   };
+// };
 
 export default Index;
