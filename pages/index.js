@@ -20,6 +20,7 @@ const Index = (props) => (
     <ProfileLink profile="hyojin" />
     <ProfileLink profile="sangjo" />
     <ProfileLink profile="chunsik" />
+    <ProfileLink profile="ryan" />
   </Layout>
 );
 
