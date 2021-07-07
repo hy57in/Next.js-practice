@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const ProfileLink = (props) => (
   <div>
-    <Link href={`/profile?name=${props.name}`}>
-      <a>Go to {props.name}'s profile</a>
+    <Link href={`/p/[profile]`} as={`/p/${props.profile}`}>
+      <a>Go to {props.profile}'s profile</a>
     </Link>
   </div>
 );
@@ -12,9 +12,9 @@ const ProfileLink = (props) => (
 const Index = () => (
   <Layout>
     <h1>Friends List</h1>
-    <ProfileLink name="hyojin" />
-    <ProfileLink name="sangjo" />
-    <ProfileLink name="chunsik" />
+    <ProfileLink profile="hyojin" />
+    <ProfileLink profile="sangjo" />
+    <ProfileLink profile="chunsik" />
   </Layout>
 );
 
