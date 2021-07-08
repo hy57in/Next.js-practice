@@ -25,29 +25,6 @@ const Index = (props) => (
 );
 
 // Index.getInitialProps = async function () {
-//   var xhr = new XMLHttpRequest();
-//   var url =
-//     "http://openapi.jbfood.go.kr:8080/openapi/service/JeonbukFoodService/getJeonbukFood"; /*URL*/
-//   var queryParams =
-//     "?" + encodeURIComponent("ServiceKey") + "=" + "서비스키"; /*Service Key*/
-//   queryParams +=
-//     "&" + encodeURIComponent("Area") + "=" + encodeURIComponent("01"); /**/
-//   xhr.open("GET", url + queryParams);
-//   xhr.onreadystatechange = function () {
-//     if (this.readyState == 4) {
-//       alert(
-//         "Status: " +
-//           this.status +
-//           "nHeaders: " +
-//           JSON.stringify(this.getAllResponseHeaders()) +
-//           "nBody: " +
-//           this.responseText
-//       );
-//     }
-//   };
-
-//   xhr.send("");
-
 //   const res = await fetch(url);
 //   const data = await res.json();
 
