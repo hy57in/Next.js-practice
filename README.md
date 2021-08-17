@@ -23,6 +23,7 @@ yarn add react react-dom next
 
 
 ### Directory
+```bash
 pages  
 ├── index.js  
 ├── profile.js  
@@ -31,3 +32,4 @@ pages
 components  
 ├── Header.js  
 └── Layout.js  
+```
